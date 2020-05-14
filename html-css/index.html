@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='nl'>
+    <head>
+        <link rel='stylesheet' href='theme.css'>
+        <link rel='icon' href='../Images/favicon.png'>
+        <meta charset="UTF-8">
+        <title>Buyable</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class='title'>Buyable</div>
+            <div class='search-bar'>
+                <input class='search-bar-input' type="text" placeholder="Waar bent u naar opzoek?">
+                <img src='../Images/search-icon.png' class='search-icon' alt=''>
+            </div>
+            <a class='contact-link' href='contact.html'>Contact</a>
+            <a class='login'>Inloggen</a>
+        </header>
+        <main class='container'>
+            <div class='slideshow'>
+                <div class='slide fade'>
+                    <img src='../Images/speelgoed.png' class='slide-img' alt='Speelgoed garage'>
+                    <div class='slide-text'>Speelgoed garage voor maar €15,99</div>
+                </div>
+                <div class='slide fade'>
+                    <img src='../Images/lamborghini.png' class='slide-img' alt='Speelgoed Lamborghini'>
+                    <div class='slide-text'>Nieuwe speelgoed Lamborgini voor maar €17,-!</div>
+                </div>
+                <div class='slide fade'>
+                    <img src='../Images/bitterbal.png' class='slide-img' alt='Bitterbal'>
+                    <div class='slide-text'>De allerlekkerste bitterbal voor €0,50</div>
+                </div>
+                <div class='slide fade'>
+                    <img src='../Images/truiblauw.png' class='slide-img' alt='Blauwe trui'>
+                    <div class='slide-text'>De allerblauwste trui voor maar €17,99</div>
+                </div>
+                <div class='next-slide' onclick='addSlide(1)'>&#10095;</div>
+                <div class='previous-slide' onclick='addSlide(-1)'>&#10094;</div>
+            </div>
+            <div class='dot-container'>
+                <span class='dot' onclick='setSlide(1)'></span>
+                <span class='dot' onclick='setSlide(2)'></span>
+                <span class='dot' onclick='setSlide(3)'></span>
+                <span class='dot' onclick='setSlide(4)'></span>
+            </div>
+            <div class='category-list'>
+                <a class='category Speelgoed' href='category.html?category=Speelgoed'>
+                    <img src='../Images/speelgoed.png' class='category-image' alt='Speelgoed'>
+                    <div class='category-name'><b>Speelgoed</b></div>    
+                </a>
+                <a class='category Kleding' href='category.html?category=Kleding'>
+                    <img src='../Images/truiblauw.png' class='category-image' alt='Kleding'>
+                    <div class='category-name'><b>Kleding</b></div>
+                </a>
+                <a class='category Eten' href='category.html?category=Eten'>
+                    <img src='../Images/bitterbal.png' class='category-image' alt='Eten'>
+                    <div class='category-name'><b>Eten</b></div>
+                </a>
+                <a class='category category-4' href='category.html?category=category-4'>
+                    <img src='../Images/speelgoed.png' class='category-image' alt='cat 4 img'>
+                    <div class='category-name'><b>Category 4</b></div>    
+                </a>
+                <a class='category category-5' href='category.html?category=category-5'>
+                    <img src='../Images/speelgoed.png' class='category-image' alt='cat 5 img'>
+                    <div class='category-name'><b>Category 5</b></div>
+                </a>
+                <a class='category category-6' href='category.html?category=category-6'>
+                    <img src='../Images/speelgoed.png' class='category-image' alt='cat 6 img'>
+                    <div class='category-name'><b>Category 6</b></div>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p class='footer-text'>Made by Tijs Wouters</p>
+        </footer> 
+        <script rel='' src='../Javascript/slideshow.js'></script>     
+    </body>
+    
+</html>

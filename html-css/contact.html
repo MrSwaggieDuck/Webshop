@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='nl'>
+    <head>
+        <link rel='stylesheet' href='theme.css'>
+        <link rel='icon' href='../Images/favicon.png'>
+        <meta charset="UTF-8">
+        <title>Buyable</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a class='title' href='index.html'>Buyable</a>
+            <div class='search-bar'>
+                <input class='search-bar-input' type="text" placeholder="Waar bent u naar opzoek?">
+                <img src='../Images/search-icon.png' class='search-icon' alt=''>     
+            </div>
+            <a class='contact-link'>Contact</a>
+            <a class='login'>Inloggen</a>
+        </header>
+        <main class='container'>
+            <form action="mailto:ld9576@leerling.ludgercollege.nl" method="post" enctype="text/plain" class='contact'>
+                <p>Naam:</p>
+                <input type="text" name="Naam" id='name-input' size='30'><br>
+                <p>Email:</p>
+                <input type="text" name="Email" id='email-input' size='30'><br>
+                <p>Bericht:</p>
+                <textarea name="Bericht" id='message-input' placeholder='Typ hier uw bericht...'></textarea><br>
+                <input type="submit" value="Versturen">
+            </form>
+        </main>
+        <footer>
+            <p class='footer-text'>Made by Tijs Wouters</p>
+        </footer>      
+    </body>
+</html>

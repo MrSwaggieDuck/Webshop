@@ -1,0 +1,422 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #222;
+    width: 100vw;
+    height: 8vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container{
+    width: 70vw;
+    margin: auto;
+    margin-top: 1vh;
+    display: block;
+    height: auto;
+    min-height: 80vh;
+    position: relative;
+}
+
+.title{
+    font-size: 7vh;
+    color: #fff;
+    margin-left: 18vw;
+    display: inline;
+    font-family: Impact, Charcoal, sans-serif;
+    text-align: center;
+}
+
+.contact-link{
+    top: 35%;
+    height: 30%;
+    font-size: 2.2vh;
+    width: 10%;
+    position: absolute;
+    right: 15%;
+    color: #fff;
+}
+
+.login{
+    top: 35%;
+    height: 30%;
+    font-size: 2.2vh;
+    width: 10%;
+    position: absolute;
+    right: 10%;
+    color: #fff;
+}
+
+.contact-link:hover, .login:hover{
+    text-decoration: underline;
+}
+
+/* SLIDESHOW */ 
+.slideshow{
+    width: 80%;
+    margin-left: 10%;
+    height: 50vh; 
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.slide-img{
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    position: relative;
+    top: 0;
+}
+
+.slide{
+    display: none;
+    height: 100%;
+    position: relative;
+}
+
+.slide-text{
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    font-size: 4vh;
+}
+
+.dot-container{
+    text-align: center;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+.next-slide{
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+    right: 0;
+    padding: 1vw;
+    top: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.previous-slide{
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+    top: 50%;
+    text-align: center;
+    left: 0;
+    padding: 1vw;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+  
+.previous-slide:hover, .next-slide:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+/* CATEGORY*/ 
+.category-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1vw 1vw;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.category{
+    width: 15vw;
+    height: 15vw;
+    border: solid 3px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.category-name{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    font-size: 1.6vw;
+    line-height: 2.4vw;
+    color: #000;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.category-image{
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+}
+
+/* SEARCH BAR*/ 
+.search-bar{
+    position: absolute;
+    height: 70%;
+    top: 15%;
+    right: 35%;
+    border-radius: 10vw;
+    width: 30%;
+    border: 1px black solid;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.search-bar-input{
+    position: absolute;
+    left: 5%;
+    height: 100%;
+    border: none;
+    width: 70%;
+    outline: none;
+    font-size: 1.2vw;
+}
+
+.search-icon{
+    position: absolute;
+    left: 88%;
+    width: 10%;
+    height: 90%;
+}
+
+/* PRODUCTS */
+#product-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vh 1vh;
+    align-items: center;
+    justify-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+.category-product-image{
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+}
+
+.category-product{
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+}
+
+.category-product-name{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 2.2vh;
+    line-height: 2.4vw;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+}
+
+#category-type{
+    width: 75%;
+    text-align: center;
+    height: 5vh;
+    font-size: 4vh;
+    margin: auto;
+    color: #000;
+}
+
+/*/ PRODUCT /*/
+.product-info{
+    background-color: #222;
+    position: absolute;
+    color: white;
+    width: 40%;
+    height: 70%;
+    left: 50%;
+    top: 10%;
+}
+
+#product-image{
+    margin-top: 6%;
+    width: 45%;
+    height: 45%;
+}
+
+#product-name{
+    margin-top: 10px;
+    font-size: 4vh;
+    width: 100%;
+    text-align: center;
+}
+
+#product-price{
+    color: red;
+    font-size: 1.8vw;
+    margin-left: 3vh;
+}
+
+#product-description{
+    font-size: 2vh;
+    width: 90%;
+    margin: auto;
+}
+
+.op-voorraad{
+    margin-top: 0.5vh;
+    border: lightgreen solid 1px;
+    width: 20%;
+    color: lightgreen;
+    left: 1%;
+    text-align: center;
+    margin-bottom: 1vh;
+    margin-left: 3vh;
+}
+
+.garantie{
+    font-size: 2vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.checkmark{
+    color: green;
+}
+
+/*/ CONTACT /*/
+.contact{
+    background-color: #222;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    color: #fff;
+}
+
+form p{
+    margin-top: 1vh;
+}
+form p, form input, form textarea{
+    margin-left: 1vw;
+}
+form #message-input{
+    width: 80%;
+    height: 40%;
+}
+form input[type=submit]{
+    width: 10%;
+    height: 10%;
+
+}
+
+/* FOOTER */
+.footer-text{
+    position: relative;
+    text-align: center;
+    width: 20%;
+    left: 40%;
+    height: 40%;
+    top: 30%;
+}
+
+footer{
+    background-color: #222;
+    height: 5vh;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    display: block;
+    margin-top: 6vh;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+.Speelgoed{
+    background-color: rgba(255, 0, 0, 0.5);
+    border-color: rgba(255, 0, 0, 1)
+}
+
+.Kleding{
+    background-color: rgba(0, 255, 0, 0.5);
+    border-color: rgba(0, 255, 0, 1)
+}
+
+.Eten{
+    background-color: rgba(0, 0, 255, 0.5);
+    border-color: rgba(0, 0, 255, 1)
+}
+
+.category-4{
+    background-color: rgba(255, 255, 0, 0.5);
+    border-color: rgba(255, 255, 0, 1)
+}
+
+.category-5{
+    background-color: rgba(255, 0, 255, 0.5);
+    border-color: rgba(255, 0, 255, 1)
+}
+
+.category-6{
+    background-color: rgba(0, 255, 255, 0.7);
+    border-color: rgba(75, 136, 136, 1)
+}
