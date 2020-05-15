@@ -279,10 +279,13 @@ a{
     top: 10%;
 }
 
-#product-image{
+#product-image, #product-video{
     margin-top: 6%;
-    width: 45%;
-    height: 45%;
+    min-width: 45%;
+    min-height: 45%;
+    max-width: 45%;
+    max-height: 80%;
+    position: absolute;
 }
 
 #product-name{
@@ -299,7 +302,7 @@ a{
 }
 
 #product-description{
-    font-size: 2vh;
+    font-size: 1.6vh;
     width: 90%;
     margin: auto;
 }
@@ -406,7 +409,7 @@ footer{
     border-color: rgba(0, 0, 255, 1)
 }
 
-.category-4{
+.Games{
     background-color: rgba(255, 255, 0, 0.5);
     border-color: rgba(255, 255, 0, 1)
 }

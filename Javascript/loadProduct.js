@@ -8,7 +8,14 @@ for (i = 0; i < products.length; i++) {
     }
 }
 
-document.getElementById('product-image').src = product.imgURL;
+if (product.video) {
+    document.getElementById('product-video').src = product.video;
+    document.getElementById('product-video').hidden = false;
+} else {
+    document.getElementById('product-image').src = product.imgURL;
+    document.getElementById('product-image').hidden = false;
+}
+
 document.getElementById('product-image').alt = product.name;
 document.getElementById('product-price').textContent = product.price;
 document.getElementById('product-description').textContent = product.description;
