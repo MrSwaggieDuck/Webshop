@@ -233,30 +233,32 @@ a{
 }
 
 .category-product-image{
-    width: 95%;
-    height: 95%;
-    margin: 2.5%;
+    max-width: 95%;
+    max-height: 95%;
+    height: auto;
+    width: auto;
 }
 
 .category-product{
     width: 12vw;
     height: 12vw;
     overflow: hidden;
-    background-color: #ddd;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .category-product-name{
     width: 100%;
-    height: 20%;
+    height: 10%;
     position: absolute;
     bottom: 1%;
     left: 1%;
-    font-size: 2.2vh;
-    line-height: 2.4vw;
+    font-size: 2vh;
     color: #000;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 #category-type{
@@ -273,7 +275,7 @@ a{
     background-color: #222;
     position: absolute;
     color: white;
-    width: 40%;
+    width: 50%;
     height: 70%;
     left: 50%;
     top: 10%;
