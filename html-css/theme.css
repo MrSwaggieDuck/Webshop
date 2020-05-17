@@ -164,9 +164,11 @@ header{
     width: 15vw;
     height: 15vw;
     border: solid 3px;
-    background-color: #fff;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
@@ -186,9 +188,10 @@ a{
 }
 
 .category-image{
-    width: 95%;
-    height: 95%;
-    margin: 2.5%;
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
 }
 
 /* SEARCH BAR*/ 
@@ -234,7 +237,7 @@ a{
 
 .category-product-image{
     max-width: 95%;
-    max-height: 95%;
+    max-height: 85%;
     height: auto;
     width: auto;
 }
@@ -406,12 +409,12 @@ footer{
     border-color: rgba(0, 255, 0, 1)
 }
 
-.Eten{
+.Games{
     background-color: rgba(0, 0, 255, 0.5);
     border-color: rgba(0, 0, 255, 1)
 }
 
-.Games{
+.Electronica{
     background-color: rgba(255, 255, 0, 0.5);
     border-color: rgba(255, 255, 0, 1)
 }
