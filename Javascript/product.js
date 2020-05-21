@@ -1,10 +1,11 @@
-function Product(name, imgURL, description, price, category, video=null) {
+function Product(name, imgURL, description, price, category, video=null, audio=null) {
     this.name = name;
     this.imgURL = imgURL;
     this.video = video;
     this.description = description
     this.price = price;
     this.category = category;
+    this.audio = audio;
 }
 
 products = [];
@@ -33,3 +34,7 @@ products.push(new Product('Red Dead Redemption 2', '../Images/rdr2.png', ' Ameri
 products.push(new Product('Playstation 4', '../Images/electronica.png', 'Het PlayStation®4-systeem opent de deur naar een ongelooflijke reis door meeslepende nieuwe gamewerelden en een sterk verbonden game-community. PS4 Slim zet gamers op de eerste plaats. Door ontwikkelaars, voor gamers.', '€299,-', 'Electronica'));
 products.push(new Product('Xbox One X', '../Images/xboxone.jpg', 'Xbox One X is de krachtigste console ooit, het maakt 4K gaming écht mogelijk. De Xbox One X heeft 40% meer vermogen dan elke ander gameconsole! Games en films zien er fenomenaal uit met vloeiende 4K gameplay, zelfs op een 1080p scherm. Alle Xbox games -de nieuwste Xbox One releases en Xbox 360 klassiekers- speel je op de Xbox One X. Ook alle Xbox accessoires werken op Xbox One X, zodat je je favoriete controller kan gebruiken.', '€340,-', 'Electronica'));
 products.push(new Product('Raspberry Pi 3B', '../Images/raspberrypi.png', 'De Raspberry Pi 3 Model B is gebouwd rondom de Broadcom 2837 ARMv8 64bit processor en is sneller en krachtiger dan zijn voorgangers. Daarnaast heeft de Raspberry Pi 3 nu on-board WiFi / Bluetooth en verbeterd power management om ondersteuning te bieden voor krachtigere externe USB apparaten.', '€39,99', 'Electronica'));
+
+//SOUND EFFECTS
+products.push(new Product('Blaffende hond', '../Images/dog.png', '', '€0,50', 'Sound-effects', null, '../Audio/dogsound.mp3'));
+products.push(new Product('Machine geweer', '../Images/machinegun.png', '', '€0,60', 'Sound-effects', null, '../Audio/machinegun.mp3'));

@@ -11,6 +11,9 @@ for (i = 0; i < products.length; i++) {
 if (product.video) {
     document.getElementById('product-video').src = product.video;
     document.getElementById('product-video').hidden = false;
+} else if (product.audio) {
+    document.getElementById('product-audio').src = product.audio;
+    document.getElementById('product-audio').hidden = false;
 } else {
     document.getElementById('product-image').src = product.imgURL;
     document.getElementById('product-image').hidden = false;
