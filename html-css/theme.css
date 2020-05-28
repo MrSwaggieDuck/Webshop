@@ -40,9 +40,8 @@ header{
     top: 35%;
     height: 30%;
     font-size: 2.2vh;
-    width: 10%;
     position: absolute;
-    right: 20%;
+    right: 25%;
     color: #fff;
 }
 
@@ -50,9 +49,8 @@ header{
     top: 35%;
     height: 30%;
     font-size: 2.2vh;
-    width: 10%;
     position: absolute;
-    right: 10%;
+    right: 13%;
     color: #fff;
 }
 
@@ -425,7 +423,7 @@ footer{
     border-color: rgba(255, 0, 255, 1)
 }
 
-.category-6{
+.Sport{
     background-color: rgba(0, 255, 255, 0.7);
     border-color: rgba(75, 136, 136, 1)
 }

@@ -1,7 +1,7 @@
 let params = new URLSearchParams(window.location.search);
 let category = params.get('category');
 
-document.getElementById('category-type').textContent = category;
+document.getElementById('category-type').textContent = category.replace('-', ' ');
 
 for (i = 0; i < products.length; i++) {
     if (products[i].category != category) continue;
