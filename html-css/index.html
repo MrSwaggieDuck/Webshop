@@ -11,8 +11,8 @@
         <header>
             <div class='title'>Buyable</div>
             <div class='search-bar'>
-                <input class='search-bar-input' type="text" placeholder="Waar bent u naar opzoek?">
-                <img src='../Images/search-icon.png' class='search-icon' alt=''>
+                <input id='search-bar-input' type="text" placeholder="Waar bent u naar opzoek?">
+                <img src='../Images/search-icon.png' class='search-icon' alt='' onclick='search()'>     
             </div>
             <a class='contact-link' href='contact.html'>Contact</a>
             <a class='login'>Inloggen</a>
@@ -28,8 +28,8 @@
                     <div class='slide-text'>Nieuwe speelgoed Lamborgini voor maar €17,-!</div>
                 </div>
                 <div class='slide fade'>
-                    <img src='../Images/bitterbal.png' class='slide-img' alt='Bitterbal'>
-                    <div class='slide-text'>De allerlekkerste bitterbal voor €0,50</div>
+                    <img src='../Images/xboxone.jpg' class='slide-img' alt='Xbox One X'>
+                    <div class='slide-text'>De nieuwste Xbox voor €340,-</div>
                 </div>
                 <div class='slide fade'>
                     <img src='../Images/truiblauw.png' class='slide-img' alt='Blauwe trui'>
@@ -67,7 +67,7 @@
                 </a>
                 <a class='category Sport' href='category.html?category=Sport'>
                     <img src='../Images/sport.png' class='category-image' alt='Sport'>
-                    <div class='category-name'><b>Category 6</b></div>
+                    <div class='category-name'><b>Sport</b></div>
                 </a>
             </div>
         </main>
@@ -75,6 +75,7 @@
             <p class='footer-text'>Made by Tijs Wouters</p>
         </footer> 
         <script rel='' src='../Javascript/slideshow.js'></script>     
+        <script src='../Javascript/product.js'></script>
     </body>
     
 </html>

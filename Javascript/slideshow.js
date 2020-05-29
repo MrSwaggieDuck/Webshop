@@ -15,7 +15,6 @@ function nextSlide() {
 }
 
 function showSlides(n) {
-  var i;
   var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
@@ -31,4 +30,6 @@ function showSlides(n) {
 }
 
 setInterval(nextSlide, 5000);
+
+
 
