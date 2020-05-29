@@ -9,6 +9,11 @@ body{
     overflow-x: hidden;
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 header{
     background-color: #222;
     width: 100vw;
@@ -20,10 +25,9 @@ header{
 .container{
     width: 70vw;
     margin: auto;
-    margin-top: 1vh;
     display: block;
     height: auto;
-    min-height: 80vh;
+    min-height: 89vh;
     position: relative;
 }
 
@@ -153,7 +157,7 @@ header{
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1vw 1vw;
     width: 80%;
-    margin: auto;
+    margin: 1vh auto 1vh auto;
     justify-items: center;
     align-items: center;
 }
@@ -238,6 +242,8 @@ a{
     max-height: 80%;
     height: auto;
     width: auto;
+    position: absolute;
+
 }
 
 .category-product{
@@ -252,11 +258,11 @@ a{
 
 .category-product-name{
     width: 100%;
-    height: 10%;
-    position: absolute;
-    bottom: 1%;
-    left: 1%;
-    font-size: 2vh;
+    height: 8%;
+    position: relative;
+    top: 42%;
+    left: 2%;
+    font-size: 1.8vh;
     color: #000;
     font-weight: bold;
     text-align: center;
@@ -277,7 +283,7 @@ a{
     position: absolute;
     color: white;
     width: 50%;
-    height: 70%;
+    height: auto;
     left: 50%;
     top: 10%;
 }
@@ -327,6 +333,7 @@ a{
     width: 90%;
     margin: auto;
     margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .checkmark{
@@ -364,20 +371,19 @@ form input[type=submit]{
 .footer-text{
     position: relative;
     text-align: center;
-    width: 20%;
-    left: 40%;
+    width: 100%;
     height: 40%;
     top: 30%;
 }
 
 footer{
     background-color: #222;
-    height: 5vh;
+    height: 3vh;
     text-align: center;
     color: #fff;
     width: 100%;
     display: block;
-    margin-top: 6vh;
+    bottom: 0;
 }
 
 .fade {
