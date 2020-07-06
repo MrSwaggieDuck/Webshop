@@ -11,8 +11,8 @@
         <header>
             <div class='title'>Buyable</div>
             <div class='search-bar'>
-                <input id='search-bar-input' type="text" placeholder="Waar bent u naar opzoek?">
-                <img src='../Images/search-icon.png' class='search-icon' alt='' onclick='search()'>     
+                <input id='search-bar-input' type="text" onkeypress='search(event)' placeholder="Waar bent u naar opzoek?">
+                <img src='../Images/search-icon.png' id='search-icon' alt='' onclick='search(event)'>     
             </div>
             <a class='contact-link' href='contact.html'>Contact</a>
             <a class='login'>Inloggen</a>

@@ -26,8 +26,8 @@ header{
     width: 70vw;
     margin: auto;
     display: block;
-    height: auto;
     min-height: 89vh;
+    height: auto;
     position: relative;
 }
 
@@ -219,7 +219,7 @@ a{
     font-size: 1.2vw;
 }
 
-.search-icon{
+#search-icon{
     position: absolute;
     left: 88%;
     width: 10%;
@@ -321,6 +321,7 @@ a{
     margin-top: 0.5vh;
     border: lightgreen solid 1px;
     width: 20%;
+    min-width: 150px;
     color: lightgreen;
     left: 1%;
     text-align: center;

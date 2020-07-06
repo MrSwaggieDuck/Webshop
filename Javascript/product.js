@@ -8,8 +8,10 @@ function Product(name, imgURL, description, price, category, video=null, audio=n
     this.audio = audio;
 }
 
-function search() {
-    window.location.href = 'search.html?search=' + document.getElementById('search-bar-input').value;
+function search(event) {
+    if (event.target == document.getElementById('search-icon') || event.keyCode == 13) {
+        window.location.href = 'search.html?search=' + document.getElementById('search-bar-input').value;
+    }
 }
 
 products = [];
